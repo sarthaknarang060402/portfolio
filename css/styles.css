@@ -62,7 +62,11 @@ body {
     text-align: center;
   }
 }
-
+/* Education  */
+.education-logo{
+  width: 200px;
+  height: auto;
+}
 /* About */
 
 .section__heading {
