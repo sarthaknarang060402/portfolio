@@ -22,6 +22,7 @@
 
 body {
   font-family: "Montserrat";
+  background-color: rgb(210, 224, 230);
 }
 
 /* Utility */
@@ -38,11 +39,20 @@ body {
 }
 
 /* Header */
-@media screen and (max-width: 768px) {
-  .profile-pic {
-    width: 60%;
+.profile-pic {
+  width: 60%; /* Adjust the desired width */
+  height: auto; /* Allow the height to adjust proportionally */
+}
+
+@media screen and (max-width: 767px) {
+  .header .row {
+    flex-direction: column;
+  }
+  .header .row > div {
+    width: 100%;
   }
 }
+
 
 .front-text {
   font-family: "Montserrat";
@@ -67,6 +77,23 @@ body {
   width: 50%;
   height: 50%;
 }
+
+.row.justify-content-start {
+  display: flex;
+}
+
+.col-md-4,
+.col-sm-6,
+.col-12 {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.white {
+  background-color: white;
+}
+
 /* About */
 
 .section__heading {
@@ -155,6 +182,8 @@ body {
   margin: 0;
 }
 
+
+
 /* Skills */
 .skill__detail {
   padding: 15px 10px;
@@ -196,6 +225,11 @@ body {
   background-color: #000 !important;
   border-radius: 50%;
 }
+.custom-size {
+  max-width: 45%; /* Adjust the max-width as needed */
+}
+
+
 
 /* Projects */
 
